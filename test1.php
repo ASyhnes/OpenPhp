@@ -52,7 +52,7 @@ function displayAuthor(string $authorEmail, array $users): string
                 return $user['full_name'] . '(' . $user['age'] . ' ans)';
             }
         }
-        return '';
+        return 'auteur inconnu';
     }
 function isValidRecipe(array $recipe): bool
     {
