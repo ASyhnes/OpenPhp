@@ -2,7 +2,7 @@
 $users = [
     [
         'full_name' => 'Mickaël Andrieu',
-        'email' => 'mickael.andrieu@exemple.com'
+        'email' => 'mickael.andrieu@exemple.com',
         'age' => 34,
     ],
     [
@@ -40,7 +40,7 @@ $recipes = [
         'title' => 'Salade Romaine',
         'recipe' => 'Etape 1 : prenez une belle salade',
         'author' => 'lorene.castor@exemple.com',
-        'is_enablad' => true,
+        'is_enabled' => true,
     ],
 ];
 
@@ -52,6 +52,7 @@ function displayAuthor(string $authorEmail, array $users): string
                 return $user['full_name'] . '(' . $user['age'] . ' ans)';
             }
         }
+        return '';
     }
 function isValidRecipe(array $recipe): bool
     {
