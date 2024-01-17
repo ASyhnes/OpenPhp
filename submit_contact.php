@@ -1,4 +1,18 @@
 <h1>Message bien reçu !</h1>
+
+<?php
+$getData = $_GET;
+
+if (
+    !isset($getData['email'])
+    || !filter_var($getData['email'], FILTER_VALIDATE_EMAIL)
+    || empty($getData['message'])
+    || trim($getData['message']) === ''
+) {
+    echo('Il faut un email et un message valides pour soumettre le formulaire.');
+    return;
+}
+?>
         
 <div class="card">
     

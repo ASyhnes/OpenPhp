@@ -15,7 +15,7 @@
     <div class="container">
         <?php require_once(__DIR__ . '/header.php'); ?>
         <h1>Contactez nous</h1>
-            <form action="/submit_contact.php" method="GET">
+            <form action="submit_contact.php" method="GET">
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
