@@ -15,7 +15,7 @@
     <div class="container">
         <?php require_once(__DIR__ . '/header.php'); ?>
         <h1>Contactez nous</h1>
-            <form action="submit_contact.php" method="POST">
+            <form action="submit_contact.php" method="POST" enctype="multipart/form-data">
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -23,6 +23,10 @@
                 <div>
                     <label for="message">Votre message</label>
                     <textarea placeholder="Exprimez vous" name="message"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="screenshot" class="form-label">Votre capture d'écran</label>
+                    <input type="file" class="form-control" id="screenshot" name="screenshot" />
                 </div>
                 <button type="submit">Envoyer</button>
             </form>
